@@ -1,0 +1,137 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-02-15T16:19:47.353Z",
+    "end": "2023-02-15T16:21:55.388Z",
+    "duration": 128035,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "91897fb5-a50b-4b4c-b671-ddcb5fc2a993",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Управление обучением и тестированием\\Управление обучением\\Portal_open_card_event_perfomance.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Управление обучением и тестированием\\Управление обучением\\Portal_open_card_event_perfomance.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка открытия мероприятие через представление список",
+          "fullTitle": "Проверка открытия мероприятие через представление список",
+          "timedOut": null,
+          "duration": 42613,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.viewport(1500, 900); //изменение масштаба страницы т.к. не помещается раздел \"Команда\"\nlogin.loginUser('ag', 'ag');\ncy.wait(10000);\ncy.get(':nth-child(4) > .menu-link').contains(\"Обучение\").click();\ncy.get('[class=\"wt-lp-wbutton-text\"]').contains('Все мероприятия').click();\ncy.wait(5000);\ncy.get('[class=\"wt-lp-tab-item wt-lp-has-bg lp-boss-tab lp-boss-tab-1\"]').contains('Список').click();\ncy.wait(5000);\ncy.xpath('//*[@id=\"WT_0x612619004EF46FFE\"]/div[2]/div/ul/li[1]').click();\ncy.xpath('//*[@id=\"WT_0x60BF6ABB064E1D0E\"]/div/div/div[2]/div').contains('Навыки работы с заемщиками').should('be.visible');",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.websoft.ru:17592/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:17592\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.websoft.ru:17592/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:17592\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:50441/__cypress/runner/cypress_runner.js:142407:82)\n    at visitFailedByErr (http://localhost:50441/__cypress/runner/cypress_runner.js:141695:12)\n    at <unknown> (http://localhost:50441/__cypress/runner/cypress_runner.js:142406:11)\n    at tryCatcher (http://localhost:50441/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (http://localhost:50441/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (http://localhost:50441/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (http://localhost:50441/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (http://localhost:50441/__cypress/runner/cypress_runner.js:9440:18)\n    at _drainQueueStep (http://localhost:50441/__cypress/runner/cypress_runner.js:6034:12)\n    at _drainQueue (http://localhost:50441/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:50441/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (http://localhost:50441/__cypress/runner/cypress_runner.js:5913:14)\nFrom Your Spec Code:\n    at Login.loginUser (webpack:///./cypress/e2e/Page_object/Login.cy.js:4:11)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Управление обучением и тестированием/Управление обучением/Portal_open_card_event_perfomance.cy.js:7:10)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 212.45.14.124:17592\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+            "diff": null
+          },
+          "uuid": "7a1720ae-a352-472b-a12a-5ff60604c61b",
+          "parentUUID": "91897fb5-a50b-4b4c-b671-ddcb5fc2a993",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка открытия мероприятие через представление календарь",
+          "fullTitle": "Проверка открытия мероприятие через представление календарь",
+          "timedOut": null,
+          "duration": 42533,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "login.loginAdmin('user1', 'user1');\ncy.xpath('/html/body/div/div/div/div[3]/div/div[1]/div[1]/div[1]/div[5]/div[2]/img').click();\ncy.get('[class=\"WssLabelDiv WssLabelDiv_SingleLine\"]').contains('Новая запись').click();\ncy.xpath('/html/body/div[2]/div[2]/div[4]/div[1]/input[1]').type('123');\ncy.xpath('/html/body/div[2]/div[2]/div[4]/div[1]/input[2]').type('test');\ncy.xpath('/html/body/div[2]/div[2]/div[4]/div[1]/div[22]/input').type(todaysDate); //cy.xpath('/html/body/div[2]/div[2]/div[4]/div[1]/input[5]').type('09:00')\ncy.xpath('/html/body/div[2]/div[2]/div[1]/div[2]').click();\ncy.wait(7000);\ncy.get('[class=\"WssLabelDiv WssLabelDiv_SingleLine WssLabelDiv_OverflowEllipsis\"]').contains('Сотрудники').click();\ncy.get('[class=\"WssLabelDiv WssLabelDiv_SingleLine\"]').contains('Выбрать сотрудников').click();\ncy.get('[class=\"WssListCell\"]').contains('Белоусова Татьяна Борисовна').dblclick();\ncy.get('[class=\"WssLabelDiv WssLabelDiv_SingleLine\"]').contains('Применить').click();\ncy.xpath('/html/body/div[2]/div[2]/div[1]/div[4]').click();",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.websoft.ru:17592/admin\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:17592\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.websoft.ru:17592/admin\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:17592\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:50441/__cypress/runner/cypress_runner.js:142407:82)\n    at visitFailedByErr (http://localhost:50441/__cypress/runner/cypress_runner.js:141695:12)\n    at <unknown> (http://localhost:50441/__cypress/runner/cypress_runner.js:142406:11)\n    at tryCatcher (http://localhost:50441/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (http://localhost:50441/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (http://localhost:50441/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (http://localhost:50441/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (http://localhost:50441/__cypress/runner/cypress_runner.js:9440:18)\n    at _drainQueueStep (http://localhost:50441/__cypress/runner/cypress_runner.js:6034:12)\n    at _drainQueue (http://localhost:50441/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:50441/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (http://localhost:50441/__cypress/runner/cypress_runner.js:5913:14)\nFrom Your Spec Code:\n    at Login.loginAdmin (webpack:///./cypress/e2e/Page_object/Login.cy.js:14:11)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Управление обучением и тестированием/Управление обучением/Portal_open_card_event_perfomance.cy.js:23:6)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 212.45.14.124:17592\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+            "diff": null
+          },
+          "uuid": "a08c31b1-259c-40e0-8178-1d5f5951b5df",
+          "parentUUID": "91897fb5-a50b-4b4c-b671-ddcb5fc2a993",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка открытия мероприятие через представление календарь",
+          "fullTitle": "Проверка открытия мероприятие через представление календарь",
+          "timedOut": null,
+          "duration": 42548,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.viewport(1500, 900); //изменение масштаба страницы т.к. не помещается раздел \"Команда\"\nlogin.loginUser('BT', 'BT');\ncy.wait(10000);\ncy.get(':nth-child(4) > .menu-link').contains(\"Обучение\").click();\ncy.get('[class=\"wt-lp-wbutton-text\"]').contains('Все мероприятия').click();\ncy.xpath('//*[@id=\"WT_0x6126189A59074B53\"]/div[1]/div[2]/div/table/tbody/tr/td/div/div/div/table').contains('test').click();\ncy.wait(7000);\ncy.xpath('//*[@id=\"WT_0x610419BD307F4338\"]/div/div/div[2]/div').contains('test').should('be.visible');",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.websoft.ru:17592/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:17592\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.websoft.ru:17592/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:17592\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:50441/__cypress/runner/cypress_runner.js:142407:82)\n    at visitFailedByErr (http://localhost:50441/__cypress/runner/cypress_runner.js:141695:12)\n    at <unknown> (http://localhost:50441/__cypress/runner/cypress_runner.js:142406:11)\n    at tryCatcher (http://localhost:50441/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (http://localhost:50441/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (http://localhost:50441/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (http://localhost:50441/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (http://localhost:50441/__cypress/runner/cypress_runner.js:9440:18)\n    at _drainQueueStep (http://localhost:50441/__cypress/runner/cypress_runner.js:6034:12)\n    at _drainQueue (http://localhost:50441/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:50441/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (http://localhost:50441/__cypress/runner/cypress_runner.js:5913:14)\nFrom Your Spec Code:\n    at Login.loginUser (webpack:///./cypress/e2e/Page_object/Login.cy.js:4:11)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Управление обучением и тестированием/Управление обучением/Portal_open_card_event_perfomance.cy.js:45:10)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 212.45.14.124:17592\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+            "diff": null
+          },
+          "uuid": "724880fb-eb71-47e7-89a9-7ae2bacbf776",
+          "parentUUID": "91897fb5-a50b-4b4c-b671-ddcb5fc2a993",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "7a1720ae-a352-472b-a12a-5ff60604c61b",
+        "a08c31b1-259c-40e0-8178-1d5f5951b5df",
+        "724880fb-eb71-47e7-89a9-7ae2bacbf776"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 127694,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

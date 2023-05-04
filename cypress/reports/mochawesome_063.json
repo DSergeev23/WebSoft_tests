@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-27T14:59:04.045Z",
+    "end": "2023-04-27T15:00:06.355Z",
+    "duration": 62310,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "29d62a3e-47d0-462d-be32-8d3da6decbf3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_self-appointed_course.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_self-appointed_course.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Самоназначение курса",
+          "fullTitle": "Самоназначение курса",
+          "timedOut": null,
+          "duration": 48119,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('Методы планирования');\nmainCommands.checkButton('Начать');\nlearningManagementCommands.openCourse('Начать');\ncy.wait(5000);",
+          "err": {},
+          "uuid": "f7c16b58-ed93-4965-9a99-0dc0758973b8",
+          "parentUUID": "29d62a3e-47d0-462d-be32-8d3da6decbf3",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка статуса назначен",
+          "fullTitle": "Проверка статуса назначен",
+          "timedOut": null,
+          "duration": 13884,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('Методы планирования');\nlearningManagementCommands.checkCourseStatus('Назначен');",
+          "err": {},
+          "uuid": "d9b337cd-5e08-4a55-87ca-db46f59664c4",
+          "parentUUID": "29d62a3e-47d0-462d-be32-8d3da6decbf3",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "f7c16b58-ed93-4965-9a99-0dc0758973b8",
+        "d9b337cd-5e08-4a55-87ca-db46f59664c4"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 62003,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

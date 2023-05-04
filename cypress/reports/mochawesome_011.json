@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-02-10T16:37:34.052Z",
+    "end": "2023-02-10T16:37:35.132Z",
+    "duration": 1080,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3a8783c5-32ae-4491-80f6-f5adc07f2091",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Варианты_открытия_втомже_окне_браузера.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Варианты_открытия_втомже_окне_браузера.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Открытие курса сотрудником на портале",
+          "fullTitle": "Открытие курса сотрудником на портале",
+          "timedOut": null,
+          "duration": 916,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('BT', 'BT');\ncy.get(':nth-child(4) > .menu-link').contains(\"Обучение\").click();\ncy.get('#WT_0x6160005D62231D06 > .wt-lp-button-wrapper > .wt-lp-wbutton-link > .wt-lp-wbutton-btn > .wt-lp-wbutton-text').click();\ncy.contains('rise | cmi5 | slides + quiz | passed/failed').click();\n/*cy.window().then((win) => {\n   cy.spy(win, 'open').as('redirect');\n });*/\nconst newUrl = \"http://127.0.0.1/cplayer2/7190033778107501929\";\ncy.window().then(win => {\n  cy.stub(win, 'open').as('windowOpen'); //cy.contains('Продолжить')\n  //.click()\n  cy.get('@windowOpen');\n  cy.window().then(win => {\n    win.location.href = newUrl; // cy.wait(20000)    \n    //const doc = Cypress.$(\"#cp_course_container\").contents().find('acc-shadow-el,.acc-button')\n    // cy.wrap(doc).click()\n  }); //cy.iframe(\"#cp_course_container\").find('#acc-6Xmb5osILI8')   //$(\"#cp_course_container\").contents().find('acc-shadow-el,.acc-button')\n  //cy.wrap(doc)\n  //.click()\n  //cy.get('[class=\"container container--fluid fill-height my-0 pa-0\"]').iframe('#cp_course_container').xpath('//*[@id=\"uniqueDomId-1882\"]').click()\n  //cy.frameLoaded ( {  URL : ' http://127.0.0.1/webtutor/ELC_Planning_methods_ORG/index_lms.html ' } ) \n  /*cy.getIframeBody('#cp_course_container')\n          .then(() => {   \n              let iframe1= contentWindow.document.querySelector('#cp_course_container')\n          }) */\n  /*cy.get('iframe').then(($iframe) => {\n    const $body = $iframe.contents().find('body')\n    cy.wrap($body).find('p').type('test')\n  })*/\n  // cy.document.querySelector('#cp_course_container').contentDocument\n  // var document=cy.getElementById('#cp_course_container').contentWindow.document\n  //const iframe=cy.get('#cp_course_container') //функция фрейма для взаимодействия с элементами внутри окна\n  //.contains('0.contentDocument.html')\n  // .should('exist')\n  //.should('not.empty')\n  //.then(cy.wrap)\n  //cy.wrap({ foo: null }).its('foo').should('be.null')\n  //iframe.xpath('//*[@id=\"slide-window\"]/div/div/div[1]/div/div[4]/div[5]').click()\n});\n/*it('Handling new Browser Window 3 способ', function () {\n  login.loginUser('BT','BT')\n  cy.get(':nth-child(4) > .menu-link').contains(\"Обучение\").click()\n  cy.get('#WT_0x6160005D62231D06 > .wt-lp-button-wrapper > .wt-lp-wbutton-link > .wt-lp-wbutton-btn > .wt-lp-wbutton-text').click()\n  cy.contains('Обучение как серьезная деятельность (мобильный)').click()\n  cy.window().then((win) => {\n      cy.stub(win, 'open', url => {\n          win.location.href = 'http://127.0.0.1/cplayer2/7028192885261758102/part?session_id=7163213230882776998&launch_id=bkVxWVxFW0hdXQRLdnRDXk0VQzdFZlp6XVdXYFRXVF9BXxtqTnRf&part_code=i1&lang=ru&tracking_url=%2Fhandler.html'\n      }).as(\"popup\")\n  })\n  cy.contains('Начать')\n  .click()\n  cy.get('@popup')\n      .should(\"be.called\")*/",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:56593/__cypress/runner/cypress_runner.js:142407:82)\n    at visitFailedByErr (http://localhost:56593/__cypress/runner/cypress_runner.js:141695:12)\n    at <unknown> (http://localhost:56593/__cypress/runner/cypress_runner.js:142406:11)\n    at tryCatcher (http://localhost:56593/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (http://localhost:56593/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (http://localhost:56593/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (http://localhost:56593/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (http://localhost:56593/__cypress/runner/cypress_runner.js:9440:18)\n    at _drainQueueStep (http://localhost:56593/__cypress/runner/cypress_runner.js:6034:12)\n    at _drainQueue (http://localhost:56593/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:56593/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (http://localhost:56593/__cypress/runner/cypress_runner.js:5913:14)\nFrom Your Spec Code:\n    at Login.loginUser (webpack:///./cypress/e2e/Page_object/Login.cy.js:4:11)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Варианты_открытия_втомже_окне_браузера.cy.js:18:8)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:80\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+            "diff": null
+          },
+          "uuid": "8c56d159-48a4-4d35-a76a-6dc3d729e55c",
+          "parentUUID": "3a8783c5-32ae-4491-80f6-f5adc07f2091",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "8c56d159-48a4-4d35-a76a-6dc3d729e55c"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 916,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-27T14:51:14.646Z",
+    "end": "2023-04-27T14:51:37.565Z",
+    "duration": 22919,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "79eb155f-0427-46cb-bb09-798cf88a28ee",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_event_card_perfomance.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_event_card_perfomance.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка открытия мероприятия через представление список",
+          "fullTitle": "Проверка открытия мероприятия через представление список",
+          "timedOut": null,
+          "duration": 22607,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все мероприятия');\nlearningManagementCommands.openEventsCalendar();\nlearningManagementCommands.openEventsList('WT_0x612617A1201E373D', 'Список');\nlearningManagementCommands.openObjectCard('Навыки работы с заемщиками', 'WT_0x612619004EF46FFE');\nmainCommands.findHeader('Навыки работы с заемщиками', 'WT_0x60BF6ABB064E1D0E');",
+          "err": {},
+          "uuid": "feb20d29-48df-4770-909e-157e6a6d989a",
+          "parentUUID": "79eb155f-0427-46cb-bb09-798cf88a28ee",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "feb20d29-48df-4770-909e-157e6a6d989a"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 22607,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

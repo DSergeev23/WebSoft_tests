@@ -1,0 +1,168 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-02-15T16:18:53.564Z",
+    "end": "2023-02-15T16:19:36.335Z",
+    "duration": 42771,
+    "testsRegistered": 5,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "6d34d565-2fda-488d-941c-d5d5cd6147cc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Управление обучением и тестированием\\Управление обучением\\Portal_check_main_modules.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Управление обучением и тестированием\\Управление обучением\\Portal_check_main_modules.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка модуля Сообщество",
+          "fullTitle": "Проверка модуля Сообщество",
+          "timedOut": null,
+          "duration": 42581,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.get('ul > :nth-child(1) > .menu-link').contains(\"Сообщество\").click();\ncy.url().should('include', '/community');\ncy.get('.wt-lp-wheader-header-text').should('contain', 'Сообщество');",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.websoft.ru:17592/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:17592\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://dev.websoft.ru:17592/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:17592\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping all of the remaining tests.\n    at <unknown> (http://localhost:50441/__cypress/runner/cypress_runner.js:142407:82)\n    at visitFailedByErr (http://localhost:50441/__cypress/runner/cypress_runner.js:141695:12)\n    at <unknown> (http://localhost:50441/__cypress/runner/cypress_runner.js:142406:11)\n    at tryCatcher (http://localhost:50441/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (http://localhost:50441/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (http://localhost:50441/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (http://localhost:50441/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (http://localhost:50441/__cypress/runner/cypress_runner.js:9440:18)\n    at _drainQueueStep (http://localhost:50441/__cypress/runner/cypress_runner.js:6034:12)\n    at _drainQueue (http://localhost:50441/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:50441/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (http://localhost:50441/__cypress/runner/cypress_runner.js:5913:14)\nFrom Your Spec Code:\n    at Login.loginUser (webpack:///./cypress/e2e/Page_object/Login.cy.js:4:11)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Управление обучением и тестированием/Управление обучением/Portal_check_main_modules.cy.js:6:10)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 212.45.14.124:17592\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+            "diff": null
+          },
+          "uuid": "3e751218-e9d4-4eba-8812-a3eb2aeddac6",
+          "parentUUID": "6d34d565-2fda-488d-941c-d5d5cd6147cc",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка модуля Сервисы",
+          "fullTitle": "Проверка модуля Сервисы",
+          "timedOut": null,
+          "duration": 0,
+          "state": "skipped",
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.get(':nth-child(2) > .menu-link').contains(\"Сервисы\").click();\ncy.url().should('include', '/allservices');\ncy.get('.wt-lp-wheader-header-text').should('contain', 'Сервисы');",
+          "err": {},
+          "uuid": "ad5c23ed-ea4b-43d9-8e73-9a570c206935",
+          "parentUUID": "6d34d565-2fda-488d-941c-d5d5cd6147cc",
+          "isHook": false,
+          "skipped": true
+        },
+        {
+          "title": "Проверка модуля Знания",
+          "fullTitle": "Проверка модуля Знания",
+          "timedOut": null,
+          "duration": 0,
+          "state": "skipped",
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.get(':nth-child(3) > .menu-link').contains(\"Знания\").click();\ncy.url().should('include', '/knowledges');\ncy.get('.wt-lp-wheader-header-text').should('contain', 'Знания');",
+          "err": {},
+          "uuid": "12dced24-9946-40d8-92dd-6a55b65dd925",
+          "parentUUID": "6d34d565-2fda-488d-941c-d5d5cd6147cc",
+          "isHook": false,
+          "skipped": true
+        },
+        {
+          "title": "Проверка модуля Обучение",
+          "fullTitle": "Проверка модуля Обучение",
+          "timedOut": null,
+          "duration": 0,
+          "state": "skipped",
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.get(':nth-child(4) > .menu-link').contains(\"Обучение\").click();\ncy.url().should('include', '/education');\ncy.get('.wt-lp-wheader-header-text').should('contain', 'Обучение');",
+          "err": {},
+          "uuid": "1986fdc3-70ca-4f56-a94c-7e44ef56e517",
+          "parentUUID": "6d34d565-2fda-488d-941c-d5d5cd6147cc",
+          "isHook": false,
+          "skipped": true
+        },
+        {
+          "title": "Проверка модуля Команда",
+          "fullTitle": "Проверка модуля Команда",
+          "timedOut": null,
+          "duration": 0,
+          "state": "skipped",
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.get(':nth-child(5) > .menu-link').contains(\"Команда\").click();\ncy.url().should('include', '/team');\ncy.get('#wt-container').invoke('text').should('match', /Кабинет руководителя|Мои коллеги/); //в условии содержится выбор в зависимости от роли сотрудника выводится текст в разделе Кабинет руководителя/Мои коллеги",
+          "err": {},
+          "uuid": "0ec7470f-4865-4140-b2c4-bc65673942f9",
+          "parentUUID": "6d34d565-2fda-488d-941c-d5d5cd6147cc",
+          "isHook": false,
+          "skipped": true
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "3e751218-e9d4-4eba-8812-a3eb2aeddac6"
+      ],
+      "pending": [],
+      "skipped": [
+        "ad5c23ed-ea4b-43d9-8e73-9a570c206935",
+        "12dced24-9946-40d8-92dd-6a55b65dd925",
+        "1986fdc3-70ca-4f56-a94c-7e44ef56e517",
+        "0ec7470f-4865-4140-b2c4-bc65673942f9"
+      ],
+      "duration": 42581,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

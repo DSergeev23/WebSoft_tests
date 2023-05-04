@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-27T14:54:11.149Z",
+    "end": "2023-04-27T14:55:25.126Z",
+    "duration": 73977,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95012f52-a7a3-4605-a449-66aff651e677",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_open_course_check_button_start.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_open_course_check_button_start.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка наличия кнопки \"начать\"",
+          "fullTitle": "Проверка наличия кнопки \"начать\"",
+          "timedOut": null,
+          "duration": 29094,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.checkButton('Начать');",
+          "err": {},
+          "uuid": "6a87f344-ffc2-4c96-8e11-6e8cb54952d5",
+          "parentUUID": "95012f52-a7a3-4605-a449-66aff651e677",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Открытие курса сотрудником на портале",
+          "fullTitle": "Открытие курса сотрудником на портале",
+          "timedOut": null,
+          "duration": 14576,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.checkButton('Начать');\nlearningManagementCommands.openCourse('Начать');",
+          "err": {},
+          "uuid": "b66e8884-81fa-4c96-883b-11b5dea2f161",
+          "parentUUID": "95012f52-a7a3-4605-a449-66aff651e677",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка статуса в процессе",
+          "fullTitle": "Проверка статуса в процессе",
+          "timedOut": null,
+          "duration": 15554,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.findHeader('Назначен', 'WT_0x637206A63E64741F');",
+          "err": {},
+          "uuid": "7ac6f222-eb9e-4862-b526-818baed5a3bd",
+          "parentUUID": "95012f52-a7a3-4605-a449-66aff651e677",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка баллов",
+          "fullTitle": "Проверка баллов",
+          "timedOut": null,
+          "duration": 14465,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.findHeader('0', 'WT_0x637206AE54985ECB');",
+          "err": {},
+          "uuid": "4b15c249-a548-4f13-bfd3-8a99cb8a6022",
+          "parentUUID": "95012f52-a7a3-4605-a449-66aff651e677",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "6a87f344-ffc2-4c96-8e11-6e8cb54952d5",
+        "b66e8884-81fa-4c96-883b-11b5dea2f161",
+        "7ac6f222-eb9e-4862-b526-818baed5a3bd",
+        "4b15c249-a548-4f13-bfd3-8a99cb8a6022"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 73689,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

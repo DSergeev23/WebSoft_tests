@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-04-28T14:42:48.049Z",
+    "end": "2023-04-28T14:44:33.814Z",
+    "duration": 105765,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e877b7d7-842d-4a19-aa96-bb0e6bba0c32",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_self_appointed_test.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_self_appointed_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка кнопки начать в карточке теста",
+          "fullTitle": "Проверка кнопки начать в карточке теста",
+          "timedOut": null,
+          "duration": 54425,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('Занимательная география');\nmainCommands.checkButton('Начать');\ntestingManagementCommands.openTestPlayer('Начать');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `[id^=WT_0x61EFEE420D834507]`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `[id^=WT_0x61EFEE420D834507]`, but never found it.\n    at MainCommands.findHeader (webpack:///./cypress/e2e/Page_object/All_pages_commands.cy.js:15:7)\n    at TestingManagementCommands.openAllTests (webpack:///./cypress/e2e/Page_object/Page_testing_management.cy.js:10:21)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Learning_testing_management/Testing_management/Portal_self_appointed_test.cy.js:20:30)",
+            "diff": null
+          },
+          "uuid": "9321ca3c-9341-4be4-86b3-5e354ffb5ee9",
+          "parentUUID": "e877b7d7-842d-4a19-aa96-bb0e6bba0c32",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Отображение теста в моих задачах",
+          "fullTitle": "Отображение теста в моих задачах",
+          "timedOut": null,
+          "duration": 51219,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openPersonalArea('ОльгаСоколова');\nmainCommands.checkObjectCardInWidget('Занимательная география', 'WT_0x60B79AB3287C4E50');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'Занимательная география' within the element: <div#WT_0x60B79AB3287C4E50.wt-lp-witemlist-workarea.wt-lp-witemlist-type-page.wt-lp-base-font-size.wt-lp-workarea-width.spisok1.skin1-itemlist-1-in-row.skin1-itemlist-simple-h-items> but never did.",
+            "estack": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'Занимательная география' within the element: <div#WT_0x60B79AB3287C4E50.wt-lp-witemlist-workarea.wt-lp-witemlist-type-page.wt-lp-base-font-size.wt-lp-workarea-width.spisok1.skin1-itemlist-1-in-row.skin1-itemlist-simple-h-items> but never did.\n    at MainCommands.checkObjectCardInWidget (webpack:///./cypress/e2e/Page_object/All_pages_commands.cy.js:89:7)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Learning_testing_management/Testing_management/Portal_self_appointed_test.cy.js:28:17)",
+            "diff": null
+          },
+          "uuid": "ab89f313-0aad-41ba-98d1-ec2924481d9b",
+          "parentUUID": "e877b7d7-842d-4a19-aa96-bb0e6bba0c32",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "9321ca3c-9341-4be4-86b3-5e354ffb5ee9",
+        "ab89f313-0aad-41ba-98d1-ec2924481d9b"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 105644,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

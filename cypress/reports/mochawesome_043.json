@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-16T13:07:20.114Z",
+    "end": "2023-03-16T13:07:34.949Z",
+    "duration": 14835,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0d030f96-51c4-4778-a8c9-4e3cf8ab29d0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\kipascriber_appeareance\\case.spec.cy.js",
+      "file": "cypress\\e2e\\kipascriber_appeareance\\case.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0567e51f-b84b-4127-a850-64a4a3059216",
+          "title": "Вход на портал",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Содержит текст на главной кнопке:",
+              "fullTitle": "Вход на портал Содержит текст на главной кнопке:",
+              "timedOut": null,
+              "duration": 9610,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(`Шаг 2 - Проверить, что кнопка регистрация содержит текст \" Регистрация \"`);\ncy.get(_case.PageObject.Button).should('have.text', _case.Text.Number);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `wt-lp-wbutton-text`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 8000ms: Expected to find element: `wt-lp-wbutton-text`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/kipascriber_appeareance/case.spec.cy.js:12:7)",
+                "diff": null
+              },
+              "uuid": "fde0f443-0cf8-4178-b6bd-92a927637f18",
+              "parentUUID": "0567e51f-b84b-4127-a850-64a4a3059216",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Вход на портал",
+              "fullTitle": "Вход на портал Вход на портал",
+              "timedOut": null,
+              "duration": 1673,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(`Шаг 2 - Кликнуть на элемент с текстом \"Вход\"`);\ncy.contains(_case.Text.Number1).click();",
+              "err": {},
+              "uuid": "2709725a-671e-4f9d-9e92-5d64056c1313",
+              "parentUUID": "0567e51f-b84b-4127-a850-64a4a3059216",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "",
+              "fullTitle": "Вход на портал ",
+              "timedOut": null,
+              "duration": 417,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "08bbcc2b-090e-43c7-9bba-91797691c077",
+              "parentUUID": "0567e51f-b84b-4127-a850-64a4a3059216",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2709725a-671e-4f9d-9e92-5d64056c1313",
+            "08bbcc2b-090e-43c7-9bba-91797691c077"
+          ],
+          "failures": [
+            "fde0f443-0cf8-4178-b6bd-92a927637f18"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11700,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

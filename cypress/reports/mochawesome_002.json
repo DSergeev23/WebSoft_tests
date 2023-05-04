@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-10T16:34:32.050Z",
+    "end": "2023-02-10T16:34:32.811Z",
+    "duration": 761,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ab74fc90-aeea-48ed-a905-d6e61f5bf946",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testing_tests\\file_download_test.cy.js",
+      "file": "cypress\\e2e\\testing_tests\\file_download_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "download_file",
+          "fullTitle": "download_file",
+          "timedOut": null,
+          "duration": 673,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'example.jpg');",
+          "err": {},
+          "uuid": "9bd79b33-15ea-4cf3-aae5-6d94f4f19646",
+          "parentUUID": "ab74fc90-aeea-48ed-a905-d6e61f5bf946",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "9bd79b33-15ea-4cf3-aae5-6d94f4f19646"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 673,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

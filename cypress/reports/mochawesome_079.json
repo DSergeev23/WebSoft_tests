@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-04-28T06:30:40.680Z",
+    "end": "2023-04-28T06:33:55.470Z",
+    "duration": 194790,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5f12d304-ca6a-438d-863d-207ef8430000",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_course_completion.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_course_completion.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Открытие и прохождение курса",
+          "fullTitle": "Открытие и прохождение курса",
+          "timedOut": null,
+          "duration": 93690,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.interceptChangeObjectUrl('**/TEMP/*/**');\nlogin.loginUser('TA', 'TA');\nmenuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.checkButton('Начать');\nlearningManagementCommands.completeCourse();",
+          "err": {
+            "message": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.",
+            "estack": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.\n    at https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:139862:81\n    at tryCatcher (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:8914:23)\n    at https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:4036:41\n    at tryCatcher (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:7027:18)\n    at _drainQueueStep (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3621:12)\n    at _drainQueue (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3614:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3630:5)\n    at Async.drainQueues (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3500:14)",
+            "diff": null
+          },
+          "uuid": "1082ebc2-d8b3-4ed1-b5c3-1dba2be1126d",
+          "parentUUID": "5f12d304-ca6a-438d-863d-207ef8430000",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка статуса завершен",
+          "fullTitle": "Проверка статуса завершен",
+          "timedOut": null,
+          "duration": 85024,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nmenuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.findHeader('Завершен', 'WT_0x637206A63E64741F');",
+          "err": {
+            "message": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.",
+            "estack": "CypressError: `cy.screenshot()` timed out waiting `30000ms` to complete.\n    at https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:139862:81\n    at tryCatcher (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:8914:23)\n    at https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:4036:41\n    at tryCatcher (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:7027:18)\n    at _drainQueueStep (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3621:12)\n    at _drainQueue (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3614:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3630:5)\n    at Async.drainQueues (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3500:14)",
+            "diff": null
+          },
+          "uuid": "18bbe620-548c-4980-9dda-7bdcafbad3ca",
+          "parentUUID": "5f12d304-ca6a-438d-863d-207ef8430000",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка баллов",
+          "fullTitle": "Проверка баллов",
+          "timedOut": null,
+          "duration": 15536,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nmenuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.findHeader('0', 'WT_0x637206AE54985ECB');",
+          "err": {},
+          "uuid": "26c16dae-37c6-4b0c-bae7-bdaf07effbe8",
+          "parentUUID": "5f12d304-ca6a-438d-863d-207ef8430000",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "26c16dae-37c6-4b0c-bae7-bdaf07effbe8"
+      ],
+      "failures": [
+        "1082ebc2-d8b3-4ed1-b5c3-1dba2be1126d",
+        "18bbe620-548c-4980-9dda-7bdcafbad3ca"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 194250,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

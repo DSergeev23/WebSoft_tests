@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-02T11:31:06.960Z",
+    "end": "2023-05-02T11:31:52.729Z",
+    "duration": 45769,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d2affe84-7a2e-4953-bd31-75be06f0b83c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_main_modules.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_main_modules.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка модуля Сообщество",
+          "fullTitle": "Проверка модуля Сообщество",
+          "timedOut": null,
+          "duration": 14244,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Сообщество', 'WT_0x631A0AC0694A65DC', '/community');",
+          "err": {},
+          "uuid": "eb4d7789-d85c-4d05-a926-d689f759d9d8",
+          "parentUUID": "d2affe84-7a2e-4953-bd31-75be06f0b83c",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка модуля Сервисы",
+          "fullTitle": "Проверка модуля Сервисы",
+          "timedOut": null,
+          "duration": 7002,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Сервисы', 'WT_0x631729B832C5719F', '/allservices');",
+          "err": {},
+          "uuid": "96ff4c87-f5d2-4ecd-a2ca-9f6633303361",
+          "parentUUID": "d2affe84-7a2e-4953-bd31-75be06f0b83c",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка модуля Знания",
+          "fullTitle": "Проверка модуля Знания",
+          "timedOut": null,
+          "duration": 9089,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Знания', 'WT_0x60ED6DFF7B3958BF', '/knowledges');",
+          "err": {},
+          "uuid": "54ae0d9f-ccf6-4f55-a3d5-521170055e6e",
+          "parentUUID": "d2affe84-7a2e-4953-bd31-75be06f0b83c",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка модуля Обучение",
+          "fullTitle": "Проверка модуля Обучение",
+          "timedOut": null,
+          "duration": 6858,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');",
+          "err": {},
+          "uuid": "ccba7fcd-ef70-4e9e-8079-06d7121b9ee7",
+          "parentUUID": "d2affe84-7a2e-4953-bd31-75be06f0b83c",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка модуля Команда",
+          "fullTitle": "Проверка модуля Команда",
+          "timedOut": null,
+          "duration": 8021,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "usefulFunctions.openTeamPage();",
+          "err": {},
+          "uuid": "52a4545b-571c-476e-936a-e8f14f7e8d1c",
+          "parentUUID": "d2affe84-7a2e-4953-bd31-75be06f0b83c",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "eb4d7789-d85c-4d05-a926-d689f759d9d8",
+        "96ff4c87-f5d2-4ecd-a2ca-9f6633303361",
+        "54ae0d9f-ccf6-4f55-a3d5-521170055e6e",
+        "ccba7fcd-ef70-4e9e-8079-06d7121b9ee7",
+        "52a4545b-571c-476e-936a-e8f14f7e8d1c"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 45214,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

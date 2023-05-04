@@ -1,0 +1,137 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-04-27T14:55:39.940Z",
+    "end": "2023-04-27T14:58:34.357Z",
+    "duration": 174417,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "433d98f5-2184-42f4-8bef-0f8574b7cc62",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_refusal_event.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_refusal_event.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Подача индивидуальной заявки на мероприятие",
+          "fullTitle": "Подача индивидуальной заявки на мероприятие",
+          "timedOut": null,
+          "duration": 65365,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nusefulFunctions.openEventList();\nlearningManagementCommands.openObjectCard('eLearning Elements 2022', 'WT_0x612619004EF46FFE');\nmainCommands.findHeader('eLearning Elements 2022', 'WT_0x60BF6ABB064E1D0E');\nlearningManagementCommands.clickButtonApply('WT_0x60EC2139497D087C', 'Подать заявку');\nusefulFunctions.applyIndividual();\nmainCommands.clickButtonWindow('OK');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'Подать заявку' within the element: <div#WT_0x60EC2139497D087C.wt-lp-wbuttonset-workarea.wt-lp-base-font-size.wt-lp-workarea-width> but never did.",
+            "estack": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'Подать заявку' within the element: <div#WT_0x60EC2139497D087C.wt-lp-wbuttonset-workarea.wt-lp-base-font-size.wt-lp-workarea-width> but never did.\n    at LearningManagementCommands.clickButtonApply (webpack:///./cypress/e2e/Page_object/Page_learning_management.cy.js:57:8)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Learning_testing_management/Learning_management/Portal_refusal_event.cy.js:17:31)",
+            "diff": null
+          },
+          "uuid": "cfa0fb04-8f7c-48ba-824f-c5eca6fa4e84",
+          "parentUUID": "433d98f5-2184-42f4-8bef-0f8574b7cc62",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Отображение заявки",
+          "fullTitle": "Отображение заявки",
+          "timedOut": null,
+          "duration": 51623,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "//учитывается условие с исправленным ДО')\nlogin.loginUser('ON', 'ON');\nmainCommands.openPersonalArea('НикитаОзеров');\nmainCommands.openPersonalAreaTab('WT_0x60B893A903726D0D', 'Документы', '/requests');\nlearningManagementCommands.openApllicationsInDocuments('WT_0x6048CAA95BCD401D', 'Заявки на согласование');\nlearningManagementCommands.chooseApplication('WT_0x6048CCDB387D3E71', 'eLearning Elements 2022');\nmainCommands.findHeader('eLearning Elements 2022', 'WT_0x637CAC0B4E161AD0');\nmainCommands.clickButtonHeader('WT_0x637CAD20342B596B', 'Согласовать заявку');\nmainCommands.clickButtonWindow('Сохранить');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'eLearning Elements 2022' within the element: <div#WT_0x6048CCDB387D3E71.wt-lp-witemlist-workarea.wt-lp-witemlist-type-row.wt-lp-base-font-size.wt-lp-workarea-width.skin1-itemlist-1-in-row> but never did.",
+            "estack": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'eLearning Elements 2022' within the element: <div#WT_0x6048CCDB387D3E71.wt-lp-witemlist-workarea.wt-lp-witemlist-type-row.wt-lp-base-font-size.wt-lp-workarea-width.skin1-itemlist-1-in-row> but never did.\n    at LearningManagementCommands.chooseApplication (webpack:///./cypress/e2e/Page_object/Page_learning_management.cy.js:96:9)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Learning_testing_management/Learning_management/Portal_refusal_event.cy.js:26:30)",
+            "diff": null
+          },
+          "uuid": "c4dc72be-984b-4357-ac31-b0776b755ec5",
+          "parentUUID": "433d98f5-2184-42f4-8bef-0f8574b7cc62",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Отказ от участия в мероприятии",
+          "fullTitle": "Отказ от участия в мероприятии",
+          "timedOut": null,
+          "duration": 57118,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nusefulFunctions.openEventList();\nlearningManagementCommands.openObjectCard('eLearning Elements 2022', 'WT_0x612619004EF46FFE');\nmainCommands.findHeader('eLearning Elements 2022', 'WT_0x60BF6ABB064E1D0E');\nmainCommands.clickButtonHeader('WT_0x60EC212C11D262CD', 'Отказаться от участия');\nmainCommands.checkWindowText('[class=\"ui-dialog wt-lp-main-info ui-widget ui-widget-content ui-front ui-dialog-buttons wt-lp-wrapper-dialog\"]', 'Вы отказались от участия в мероприятии');\nmainCommands.clickButtonWindow('OK');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'Отказаться от участия' within the element: <div#WT_0x60EC212C11D262CD.wt-lp-macro-block.wt-lp-base-font-size.no-min-height-zones> but never did.",
+            "estack": "AssertionError: Timed out retrying after 40000ms: Expected to find content: 'Отказаться от участия' within the element: <div#WT_0x60EC212C11D262CD.wt-lp-macro-block.wt-lp-base-font-size.no-min-height-zones> but never did.\n    at MainCommands.clickButtonHeader (webpack:///./cypress/e2e/Page_object/All_pages_commands.cy.js:80:7)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Learning_testing_management/Learning_management/Portal_refusal_event.cy.js:37:17)",
+            "diff": null
+          },
+          "uuid": "e926cec2-0918-4779-8544-202ced9c96f4",
+          "parentUUID": "433d98f5-2184-42f4-8bef-0f8574b7cc62",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "cfa0fb04-8f7c-48ba-824f-c5eca6fa4e84",
+        "c4dc72be-984b-4357-ac31-b0776b755ec5",
+        "e926cec2-0918-4779-8544-202ced9c96f4"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 174106,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

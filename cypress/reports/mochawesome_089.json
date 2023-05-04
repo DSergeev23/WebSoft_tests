@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-04-28T08:25:14.016Z",
+    "end": "2023-04-28T08:25:14.980Z",
+    "duration": 964,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "5a6c7f34-2442-48c7-b34a-74d8671af1df",
+      "title": "",
+      "fullFile": "cypress\\e2e\\kipascriber_appeareance\\case.spec.cy.js",
+      "file": "cypress\\e2e\\kipascriber_appeareance\\case.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "29d58a37-53ff-4c58-a5ff-0a0311947f38",
+          "title": "Вход на портал",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Содержит текст на главной кнопке:",
+              "fullTitle": "Вход на портал Содержит текст на главной кнопке:",
+              "timedOut": null,
+              "duration": 880,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(`Шаг 2 - Проверить, что кнопка регистрация содержит текст \" Регистрация \"`);\ncy.get(_case.PageObject.Button).should('have.text', _case.Text.Number);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Вход на портал`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Вход на портал`\n    at <unknown> (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:138252:82)\n    at visitFailedByErr (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:137644:12)\n    at <unknown> (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:138251:11)\n    at tryCatcher (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:7027:18)\n    at _drainQueueStep (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3621:12)\n    at _drainQueue (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3614:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3630:5)\n    at Async.drainQueues (https://dev.websoft.ru:16598/__cypress/runner/cypress_runner.js:3500:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/kipascriber_appeareance/case.spec.cy.js:6:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:80\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "fa449371-14a6-41b4-ba71-6da1d67059c6",
+              "parentUUID": "29d58a37-53ff-4c58-a5ff-0a0311947f38",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Вход на портал",
+              "fullTitle": "Вход на портал Вход на портал",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(`Шаг 2 - Кликнуть на элемент с текстом \"Вход\"`);\ncy.contains(_case.Text.Number1).click();",
+              "err": {},
+              "uuid": "988b822e-0109-478d-8286-701e099adf54",
+              "parentUUID": "29d58a37-53ff-4c58-a5ff-0a0311947f38",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "",
+              "fullTitle": "Вход на портал ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "daeff165-1464-40ca-8397-f6b3306315b8",
+              "parentUUID": "29d58a37-53ff-4c58-a5ff-0a0311947f38",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fa449371-14a6-41b4-ba71-6da1d67059c6"
+          ],
+          "pending": [],
+          "skipped": [
+            "988b822e-0109-478d-8286-701e099adf54",
+            "daeff165-1464-40ca-8397-f6b3306315b8"
+          ],
+          "duration": 880,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

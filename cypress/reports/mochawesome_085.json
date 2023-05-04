@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-28T06:38:42.516Z",
+    "end": "2023-04-28T06:39:42.836Z",
+    "duration": 60320,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7540a582-3244-4ed7-ad6c-b16ae829ee18",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_refusal_event.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_refusal_event.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Подача индивидуальной заявки на мероприятие",
+          "fullTitle": "Подача индивидуальной заявки на мероприятие",
+          "timedOut": null,
+          "duration": 27966,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nusefulFunctions.openEventList();\nlearningManagementCommands.openObjectCard('eLearning Elements 2022', 'WT_0x612619004EF46FFE');\nmainCommands.findHeader('eLearning Elements 2022', 'WT_0x60BF6ABB064E1D0E');\nlearningManagementCommands.clickButtonApply('WT_0x60EC2139497D087C', 'Подать заявку');\nusefulFunctions.applyIndividual();\nmainCommands.clickButtonWindow('OK');",
+          "err": {},
+          "uuid": "f4110fdf-a449-4ce6-8227-edea8375619a",
+          "parentUUID": "7540a582-3244-4ed7-ad6c-b16ae829ee18",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Отображение заявки",
+          "fullTitle": "Отображение заявки",
+          "timedOut": null,
+          "duration": 15723,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "//учитывается условие с исправленным ДО')\nlogin.loginUser('ON', 'ON');\nmainCommands.openPersonalArea('НикитаОзеров');\nmainCommands.openPersonalAreaTab('WT_0x60B893A903726D0D', 'Документы', '/requests');\nlearningManagementCommands.openApllicationsInDocuments('WT_0x6048CAA95BCD401D', 'Заявки на согласование');\nlearningManagementCommands.chooseApplication('WT_0x6048CCDB387D3E71', 'eLearning Elements 2022');\nmainCommands.findHeader('eLearning Elements 2022', 'WT_0x637CAC0B4E161AD0');\nmainCommands.clickButtonHeader('WT_0x637CAD20342B596B', 'Согласовать заявку');\nmainCommands.clickButtonWindow('Сохранить');",
+          "err": {},
+          "uuid": "155acc93-2d0f-48b3-a9ea-2e018d55c857",
+          "parentUUID": "7540a582-3244-4ed7-ad6c-b16ae829ee18",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Отказ от участия в мероприятии",
+          "fullTitle": "Отказ от участия в мероприятии",
+          "timedOut": null,
+          "duration": 16327,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nusefulFunctions.openEventList();\nlearningManagementCommands.openObjectCard('eLearning Elements 2022', 'WT_0x612619004EF46FFE');\nmainCommands.findHeader('eLearning Elements 2022', 'WT_0x60BF6ABB064E1D0E');\nmainCommands.clickButtonHeader('WT_0x60EC212C11D262CD', 'Отказаться от участия');\nmainCommands.checkWindowText('[class=\"ui-dialog wt-lp-main-info ui-widget ui-widget-content ui-front ui-dialog-buttons wt-lp-wrapper-dialog\"]', 'Вы отказались от участия в мероприятии');\nmainCommands.clickButtonWindow('OK');",
+          "err": {},
+          "uuid": "0bdc63df-299c-4959-a779-f050ab9a1a93",
+          "parentUUID": "7540a582-3244-4ed7-ad6c-b16ae829ee18",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "f4110fdf-a449-4ce6-8227-edea8375619a",
+        "155acc93-2d0f-48b3-a9ea-2e018d55c857",
+        "0bdc63df-299c-4959-a779-f050ab9a1a93"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 60016,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-28T08:58:26.172Z",
+    "end": "2023-04-28T08:59:46.624Z",
+    "duration": 80452,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b3eaeb8a-6b59-4368-9aeb-af16f2cdd183",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\1Portal_apply_approve_course.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\1Portal_apply_approve_course.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Подача индивидуальной заявки на курс",
+          "fullTitle": "Подача индивидуальной заявки на курс",
+          "timedOut": null,
+          "duration": 50711,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nmainCommands.openPersonalArea('АннаТитова');\nmainCommands.openPersonalAreaTab('WT_0x60B893A903726D0D', 'Документы', '/requests');\nlearningManagementCommands.chooseTypeOfApplication('WT_0x61E57E003B4A30CC', 'Заявка на активацию электронного курса');\nlearningManagementCommands.chooseCourseInApplication('Выберите элемент', '[class=\"wt-x-show-dialog-frame\"]', 'Инициатива и ответственность');\nlearningManagementCommands.chooseObjectInApllication('[class=\"wt-lp-dialog-fld\"]', 1, 'click', '[class=\"ui-selectmenu-menu ui-front ui-selectmenu-open\"]', 'индивидуальная', '[class=\"ui-selectmenu-button ui-button ui-widget ui-selectmenu-button-closed ui-corner-all\"]');\nmainCommands.clickButtonWindow('OK');\nmainCommands.checkWindowText('[class=\"ui-dialog wt-lp-main-info ui-widget ui-widget-content ui-front ui-dialog-buttons wt-lp-wrapper-dialog\"]', 'Заявка успешно создана');",
+          "err": {},
+          "uuid": "67077167-1657-4c7c-9ab1-0e551618dd74",
+          "parentUUID": "b3eaeb8a-6b59-4368-9aeb-af16f2cdd183",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Отображение заявки",
+          "fullTitle": "Отображение заявки",
+          "timedOut": null,
+          "duration": 23292,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "//учитывается условие с исправленным ДО')\nlogin.loginUser('ON', 'ON');\nmainCommands.openPersonalArea('НикитаОзеров');\nmainCommands.openPersonalAreaTab('WT_0x60B893A903726D0D', 'Документы', '/requests');\nlearningManagementCommands.openApllicationsInDocuments('WT_0x6048CAA95BCD401D', 'Заявки на согласование');\nlearningManagementCommands.chooseApplication('WT_0x6048CCDB387D3E71', 'Инициатива и ответственность');\nmainCommands.findHeader('Инициатива и ответственность', 'WT_0x637CAC0B4E161AD0');\nmainCommands.clickButtonHeader('WT_0x637CAD20342B596B', 'Согласовать заявку');\nmainCommands.clickButtonWindow('Сохранить');",
+          "err": {},
+          "uuid": "87d06694-4361-4755-830d-67422f202838",
+          "parentUUID": "b3eaeb8a-6b59-4368-9aeb-af16f2cdd183",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка курса у сотрудника",
+          "fullTitle": "Проверка курса у сотрудника",
+          "timedOut": null,
+          "duration": 6032,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nmainCommands.openPersonalArea('АннаТитова');\nmainCommands.checkObjectCardInWidget('Инициатива и ответственность', 'WT_0x60B79AB3287C4E50');",
+          "err": {},
+          "uuid": "815ebd2f-6915-4386-9f70-317adce1aa80",
+          "parentUUID": "b3eaeb8a-6b59-4368-9aeb-af16f2cdd183",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "67077167-1657-4c7c-9ab1-0e551618dd74",
+        "87d06694-4361-4755-830d-67422f202838",
+        "815ebd2f-6915-4386-9f70-317adce1aa80"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 80035,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

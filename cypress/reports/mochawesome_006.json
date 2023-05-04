@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-02-10T16:36:04.416Z",
+    "end": "2023-02-10T16:36:47.549Z",
+    "duration": 43133,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b70fd5f1-3ed3-4e79-9a69-ab439807c93b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testing_tests\\test2.cy.js",
+      "file": "cypress\\e2e\\testing_tests\\test2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Google_search",
+          "fullTitle": "Google_search",
+          "timedOut": null,
+          "duration": 42933,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('  https://dev.websoft.ru:37542/default');\ncy.get('#WT_0x5FCF38E602623841 > .wt-lp-wfld-root > .wt-lp-wfld-block > .wt-lp-wfld-container > .wt-lp-wfld-wrapper > .wt-lp-wfld-fld').type('ag');\ncy.get('#WT_0x5FCF37302D4E784C > .wt-lp-wfld-root > .wt-lp-wfld-block > .wt-lp-wfld-container > .wt-lp-wfld-wrapper > .wt-lp-wfld-fld').type('ag');\ncy.contains('Вход').click();\ncy.get('ul > :nth-child(1) > .menu-link > span').click();\ncy.get('#WT_0x63234B307175584D > .wt-lp-button-wrapper > .wt-lp-wbutton-link > .wt-lp-wbutton-btn > .wt-lp-wbutton-text').should('contain', 'Все дни рождения').and('have.class', 'wt-lp-wbutton-text').and('be.visible');\nexpect(true).to.be.true; //expect(true).to.be.tru \n//let name = 'cypress';\n//expect(name).to.be.equal('cypress')- функция позволяющая удостовериться что есть такой текст на кнопке(также expect.to.not.equal, expect.to.be.null)\nassert.equal(4, 4, 'NOT EQUAL'); //assert.strictEqual(4,'4', 'NOT EQUAL') //выполняется строгое неравенство при 4 записанной как строка",
+          "err": {
+            "message": "CypressError: `cy.visit()` failed trying to load:\n\n  https://dev.websoft.ru:37542/default\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:37542\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+            "estack": "CypressError: `cy.visit()` failed trying to load:\n\n  https://dev.websoft.ru:37542/default\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 212.45.14.124:37542\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:56593/__cypress/runner/cypress_runner.js:142407:82)\n    at visitFailedByErr (http://localhost:56593/__cypress/runner/cypress_runner.js:141695:12)\n    at <unknown> (http://localhost:56593/__cypress/runner/cypress_runner.js:142406:11)\n    at tryCatcher (http://localhost:56593/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (http://localhost:56593/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (http://localhost:56593/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (http://localhost:56593/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (http://localhost:56593/__cypress/runner/cypress_runner.js:9440:18)\n    at _drainQueueStep (http://localhost:56593/__cypress/runner/cypress_runner.js:6034:12)\n    at _drainQueue (http://localhost:56593/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:56593/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (http://localhost:56593/__cypress/runner/cypress_runner.js:5913:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/testing_tests/test2.cy.js:18:11)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 212.45.14.124:37542\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+            "diff": null
+          },
+          "uuid": "dd884267-2659-4bf8-a3ff-de4ddf03438b",
+          "parentUUID": "b70fd5f1-3ed3-4e79-9a69-ab439807c93b",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "dd884267-2659-4bf8-a3ff-de4ddf03438b"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 42933,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

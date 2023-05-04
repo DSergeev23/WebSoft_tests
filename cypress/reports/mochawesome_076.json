@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-28T06:21:24.976Z",
+    "end": "2023-04-28T06:23:27.062Z",
+    "duration": 122086,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d75c4830-d218-4540-a01a-00b362bfdd58",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_test_completion_succesfully.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_test_completion_succesfully.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "В админке настройка теста",
+          "fullTitle": "В админке настройка теста",
+          "timedOut": null,
+          "duration": 57671,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginAdmin('user1', 'user1');\ncy.xpath('/html/body/div/div/div/div[3]/div/div[1]/div[1]/div[1]/div[3]').click();\ncy.xpath('/html/body/div/div/div/div[3]/div/div[6]/div/div[3]/div[2]').click();\ncy.xpath('/html/body/div/div/div/div[5]/div/div[1]/div[11]/div[2]/div/div[1]/div[1]').dblclick();\ncy.xpath('/html/body/div[2]/div[2]/div[2]/div[4]/div/div[4]/div[2]').click();\ncy.xpath('/html/body/div[2]/div[2]/div[4]/div[1]/div[10]').click();\ncy.xpath('/html/body/div[3]/div/div[1]').click();\ncy.xpath('./html/body/div[2]/div[2]/div[1]/div[4]').click();",
+          "err": {},
+          "uuid": "61e188d6-2947-45d7-a035-18864f2a1b04",
+          "parentUUID": "d75c4830-d218-4540-a01a-00b362bfdd58",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Прохождение теста успешно",
+          "fullTitle": "Прохождение теста успешно",
+          "timedOut": null,
+          "duration": 38870,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('Занимательная география');\nmainCommands.checkButton('Начать');\ntestingManagementCommands.openTestPlayer('Начать');\ntestingManagementCommands.completeTestSuccesfully();",
+          "err": {},
+          "uuid": "9a2931e7-b403-4552-b183-bbcde11f8af8",
+          "parentUUID": "d75c4830-d218-4540-a01a-00b362bfdd58",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка статуса",
+          "fullTitle": "Проверка статуса",
+          "timedOut": null,
+          "duration": 11961,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('Занимательная география');\nmainCommands.findHeader('Пройден', 'WT_0x637B77422CF629BF');",
+          "err": {},
+          "uuid": "6513293a-6250-4e92-993b-4e361e5258b1",
+          "parentUUID": "d75c4830-d218-4540-a01a-00b362bfdd58",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка баллов",
+          "fullTitle": "Проверка баллов",
+          "timedOut": null,
+          "duration": 12953,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('Занимательная география');\nmainCommands.findHeader('6', 'WT_0x637B774B60D76ABE');",
+          "err": {},
+          "uuid": "5b1e2eac-65be-435f-a558-fa156508a800",
+          "parentUUID": "d75c4830-d218-4540-a01a-00b362bfdd58",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "61e188d6-2947-45d7-a035-18864f2a1b04",
+        "9a2931e7-b403-4552-b183-bbcde11f8af8",
+        "6513293a-6250-4e92-993b-4e361e5258b1",
+        "5b1e2eac-65be-435f-a558-fa156508a800"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 121455,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

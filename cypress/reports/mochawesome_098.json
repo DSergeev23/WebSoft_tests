@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-28T13:14:44.027Z",
+    "end": "2023-04-28T13:15:41.919Z",
+    "duration": 57892,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b94a2eb2-5150-46dc-bd08-2a5ca10befd4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_open_test_check_button_start.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_open_test_check_button_start.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка кнопки начать в карточке теста",
+          "fullTitle": "Проверка кнопки начать в карточке теста",
+          "timedOut": null,
+          "duration": 24522,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('Занимательная география');\nmainCommands.checkButton('Начать');",
+          "err": {},
+          "uuid": "75bc2714-405a-4275-8a64-6240053b9014",
+          "parentUUID": "b94a2eb2-5150-46dc-bd08-2a5ca10befd4",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Запуск теста",
+          "fullTitle": "Запуск теста",
+          "timedOut": null,
+          "duration": 18679,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('Занимательная география');\ntestingManagementCommands.openTestPlayer('Начать');",
+          "err": {},
+          "uuid": "0cdc5573-f156-4ac6-850c-917ae352dd26",
+          "parentUUID": "b94a2eb2-5150-46dc-bd08-2a5ca10befd4",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка факта назначения",
+          "fullTitle": "Проверка факта назначения",
+          "timedOut": null,
+          "duration": 14307,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('Занимательная география');\nmainCommands.findHeader('Назначен', 'WT_0x637B77422CF629BF');",
+          "err": {},
+          "uuid": "d0f9829e-017b-46da-9a17-b705a92c636f",
+          "parentUUID": "b94a2eb2-5150-46dc-bd08-2a5ca10befd4",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "75bc2714-405a-4275-8a64-6240053b9014",
+        "0cdc5573-f156-4ac6-850c-917ae352dd26",
+        "d0f9829e-017b-46da-9a17-b705a92c636f"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 57508,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-28T14:42:28.086Z",
+    "end": "2023-04-28T14:42:42.716Z",
+    "duration": 14630,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "62e5831e-9f84-4e02-b41a-cc1148fc6a08",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_search_test.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_search_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Корректный поиск теста",
+          "fullTitle": "Корректный поиск теста",
+          "timedOut": null,
+          "duration": 14544,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('spec', 'tator');\nmenuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\nmainCommands.typeInSearchField('WT_0x60F5A5280B0A2DD9', 'география');\nmainCommands.checkSearchResult('Занимательная география', 'Знаете ли вы литературу');",
+          "err": {},
+          "uuid": "25b7c2bd-b590-4bdd-806b-fd8866f8b9eb",
+          "parentUUID": "62e5831e-9f84-4e02-b41a-cc1148fc6a08",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "25b7c2bd-b590-4bdd-806b-fd8866f8b9eb"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 14544,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

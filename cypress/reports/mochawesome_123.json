@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-02T08:09:18.822Z",
+    "end": "2023-05-02T08:10:10.890Z",
+    "duration": 52068,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "821386a5-db3c-4740-98d7-169d2d24ef32",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_open_test_check_button_start.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_open_test_check_button_start.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка кнопки начать в карточке теста",
+          "fullTitle": "Проверка кнопки начать в карточке теста",
+          "timedOut": null,
+          "duration": 17073,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('_Занимательная география_cypress');\nmainCommands.checkButton('Начать');",
+          "err": {},
+          "uuid": "94a25660-03e4-4cbc-8ae1-526c9950944d",
+          "parentUUID": "821386a5-db3c-4740-98d7-169d2d24ef32",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Запуск теста",
+          "fullTitle": "Запуск теста",
+          "timedOut": null,
+          "duration": 22102,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('_Занимательная география_cypress');\ntestingManagementCommands.openTestPlayer('Начать');",
+          "err": {},
+          "uuid": "132b3cc6-3a77-4276-957e-fea2d7ee91c5",
+          "parentUUID": "821386a5-db3c-4740-98d7-169d2d24ef32",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка факта назначения",
+          "fullTitle": "Проверка факта назначения",
+          "timedOut": null,
+          "duration": 12720,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('_Занимательная география_cypress');\nmainCommands.findHeader('Назначен', 'WT_0x637B77422CF629BF');",
+          "err": {},
+          "uuid": "419b4944-903e-4aec-bb04-557fdfe55774",
+          "parentUUID": "821386a5-db3c-4740-98d7-169d2d24ef32",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "94a25660-03e4-4cbc-8ae1-526c9950944d",
+        "132b3cc6-3a77-4276-957e-fea2d7ee91c5",
+        "419b4944-903e-4aec-bb04-557fdfe55774"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 51895,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

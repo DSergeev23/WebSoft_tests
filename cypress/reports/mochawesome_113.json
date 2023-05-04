@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-05-02T07:55:18.275Z",
+    "end": "2023-05-02T07:57:03.734Z",
+    "duration": 105459,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7b3dbde-b4cb-47b8-8930-170dde55a834",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_course_completion.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_course_completion.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Открытие и прохождение курса",
+          "fullTitle": "Открытие и прохождение курса",
+          "timedOut": null,
+          "duration": 44100,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.interceptChangeObjectUrl('**/TEMP/*/**');\nlogin.loginUser('TA', 'TA');\nmainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.checkButton('Начать');\nlearningManagementCommands.completeCourse();",
+          "err": {},
+          "uuid": "dba3a8cc-ccce-46bc-b0fa-40104ddcac63",
+          "parentUUID": "e7b3dbde-b4cb-47b8-8930-170dde55a834",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка статуса завершен",
+          "fullTitle": "Проверка статуса завершен",
+          "timedOut": null,
+          "duration": 49253,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nmainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.findHeader('Завершен', 'WT_0x637206A63E64741F');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 40000ms: expected '<div#WT_0x637206A63E64741F.wt-lp-witemlist-workarea.wt-lp-witemlist-type-row.wt-lp-base-font-size.wt-lp-workarea-width>' to contain 'Завершен'",
+            "estack": "AssertionError: Timed out retrying after 40000ms: expected '<div#WT_0x637206A63E64741F.wt-lp-witemlist-workarea.wt-lp-witemlist-type-row.wt-lp-base-font-size.wt-lp-workarea-width>' to contain 'Завершен'\n    at MainCommands.findHeader (webpack:///./cypress/e2e/Page_object/All_pages_commands.cy.js:15:7)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Learning_testing_management/Learning_management/Portal_course_completion.cy.js:26:17)",
+            "diff": null
+          },
+          "uuid": "feadc9d8-4adc-4be9-894d-261cc322b604",
+          "parentUUID": "e7b3dbde-b4cb-47b8-8930-170dde55a834",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка баллов",
+          "fullTitle": "Проверка баллов",
+          "timedOut": null,
+          "duration": 11889,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('TA', 'TA');\nmainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.findHeader('0', 'WT_0x637206AE54985ECB');",
+          "err": {},
+          "uuid": "10ed9ded-6ede-4dd2-9dc2-a0ef83b5dbe8",
+          "parentUUID": "e7b3dbde-b4cb-47b8-8930-170dde55a834",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "dba3a8cc-ccce-46bc-b0fa-40104ddcac63",
+        "10ed9ded-6ede-4dd2-9dc2-a0ef83b5dbe8"
+      ],
+      "failures": [
+        "feadc9d8-4adc-4be9-894d-261cc322b604"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 105242,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

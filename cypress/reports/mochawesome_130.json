@@ -1,0 +1,153 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-05-02T09:02:02.585Z",
+    "end": "2023-05-02T09:04:19.651Z",
+    "duration": 137066,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8cc9e917-3031-4642-8ba8-5fd8ea1d557b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_open_course_check_button_start.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_open_course_check_button_start.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка наличия кнопки \"начать\"",
+          "fullTitle": "Проверка наличия кнопки \"начать\"",
+          "timedOut": null,
+          "duration": 19345,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.checkButton('Начать');",
+          "err": {},
+          "uuid": "92968227-1519-464b-8c45-1dbe3fe7151b",
+          "parentUUID": "8cc9e917-3031-4642-8ba8-5fd8ea1d557b",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Открытие курса сотрудником на портале",
+          "fullTitle": "Открытие курса сотрудником на портале",
+          "timedOut": null,
+          "duration": 12357,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.checkButton('Начать');\nlearningManagementCommands.openCourse('Начать');",
+          "err": {},
+          "uuid": "0e1e4e70-57f3-4e2b-8c0a-da9cbdaf99ed",
+          "parentUUID": "8cc9e917-3031-4642-8ba8-5fd8ea1d557b",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка статуса в процессе",
+          "fullTitle": "Проверка статуса в процессе",
+          "timedOut": null,
+          "duration": 52292,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.findHeader('Назначен', 'WT_0x637206A63E64741F');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `[id^=WT_0x637206A63E64741F]`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `[id^=WT_0x637206A63E64741F]`, but never found it.\n    at MainCommands.findHeader (webpack:///./cypress/e2e/Page_object/All_pages_commands.cy.js:15:7)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Learning_testing_management/Learning_management/Portal_open_course_check_button_start.cy.js:36:17)",
+            "diff": null
+          },
+          "uuid": "93a81a04-b4e2-471b-a1d8-02ce2c08fcc8",
+          "parentUUID": "8cc9e917-3031-4642-8ba8-5fd8ea1d557b",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Проверка баллов",
+          "fullTitle": "Проверка баллов",
+          "timedOut": null,
+          "duration": 52756,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openMenuItemPage('Обучение', 'WT_0x60C1FDC25AC90F53', '/education');\nmainCommands.openWidgetLearningModule('Все электронные курсы');\nlearningManagementCommands.openAllCourses();\nlearningManagementCommands.openCoursePage('rise | scorm 2004-4 | slides + finish-button | passed/incomplete');\nmainCommands.findHeader('0', 'WT_0x637206AE54985ECB');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `[id^=WT_0x637206AE54985ECB]`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 40000ms: Expected to find element: `[id^=WT_0x637206AE54985ECB]`, but never found it.\n    at MainCommands.findHeader (webpack:///./cypress/e2e/Page_object/All_pages_commands.cy.js:15:7)\n    at Context.eval (webpack:///./cypress/e2e/WebSoft/Learning_testing_management/Learning_management/Portal_open_course_check_button_start.cy.js:44:17)",
+            "diff": null
+          },
+          "uuid": "212a3f52-d792-4b3a-9152-783d6b705bc4",
+          "parentUUID": "8cc9e917-3031-4642-8ba8-5fd8ea1d557b",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "92968227-1519-464b-8c45-1dbe3fe7151b",
+        "0e1e4e70-57f3-4e2b-8c0a-da9cbdaf99ed"
+      ],
+      "failures": [
+        "93a81a04-b4e2-471b-a1d8-02ce2c08fcc8",
+        "212a3f52-d792-4b3a-9152-783d6b705bc4"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 136750,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

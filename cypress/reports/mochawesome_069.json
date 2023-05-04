@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-27T15:10:33.833Z",
+    "end": "2023-04-27T15:12:14.563Z",
+    "duration": 100730,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b61b7462-d35a-4c49-8d9c-5453a28865e2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_self_appointed_test.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Testing_management\\Portal_self_appointed_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Проверка кнопки начать в карточке теста",
+          "fullTitle": "Проверка кнопки начать в карточке теста",
+          "timedOut": null,
+          "duration": 76585,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "menuItems.openEducationPage();\nmainCommands.openWidgetLearningModule('Все тесты');\ntestingManagementCommands.openAllTests();\ntestingManagementCommands.openTestPage('Занимательная география');\nmainCommands.checkButton('Начать');\ntestingManagementCommands.openTestPlayer('Начать');",
+          "err": {},
+          "uuid": "72121abe-bf3e-4a10-8de8-fc097f72d254",
+          "parentUUID": "b61b7462-d35a-4c49-8d9c-5453a28865e2",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Отображение теста в моих задачах",
+          "fullTitle": "Отображение теста в моих задачах",
+          "timedOut": null,
+          "duration": 23853,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "mainCommands.openPersonalArea('ОльгаСоколова');\nmainCommands.checkObjectCardInWidget('Занимательная география', 'WT_0x60B79AB3287C4E50');",
+          "err": {},
+          "uuid": "316b0b42-0dab-46a9-8883-9bdfbcc1bc47",
+          "parentUUID": "b61b7462-d35a-4c49-8d9c-5453a28865e2",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "72121abe-bf3e-4a10-8de8-fc097f72d254",
+        "316b0b42-0dab-46a9-8883-9bdfbcc1bc47"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 100438,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

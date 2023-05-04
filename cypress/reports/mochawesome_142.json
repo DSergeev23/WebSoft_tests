@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-02T11:37:24.232Z",
+    "end": "2023-05-02T11:38:01.247Z",
+    "duration": 37015,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "493772d4-28a9-462e-ab94-0357bdb09d4d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_submitting_invidual_application.cy.js",
+      "file": "cypress\\e2e\\WebSoft\\Learning_testing_management\\Learning_management\\Portal_submitting_invidual_application.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Подача индивидуальной заявки на мероприятие",
+          "fullTitle": "Подача индивидуальной заявки на мероприятие",
+          "timedOut": null,
+          "duration": 22331,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "login.loginUser('BT', 'BT');\nusefulFunctions.openEventList();\nlearningManagementCommands.openObjectCard('Навыки работы с заемщиками', 'WT_0x612619004EF46FFE');\nmainCommands.findHeader('Навыки работы с заемщиками', 'WT_0x60BF6ABB064E1D0E');\nlearningManagementCommands.clickButtonApply('WT_0x60EC2139497D087C', 'Подать заявку');\nusefulFunctions.applyIndividual();\nmainCommands.clickButtonWindow('OK');",
+          "err": {},
+          "uuid": "c6561a45-8a75-4195-b734-6277414a6028",
+          "parentUUID": "493772d4-28a9-462e-ab94-0357bdb09d4d",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Отображение заявки",
+          "fullTitle": "Отображение заявки",
+          "timedOut": null,
+          "duration": 14489,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "//учитывается условие с исправленным ДО')\nlogin.loginUser('KM', 'KM');\nmainCommands.openPersonalArea('МаксимКедров');\nmainCommands.openPersonalAreaTab('WT_0x60B893A903726D0D', 'Документы', '/requests');\nlearningManagementCommands.openApllicationsInDocuments('WT_0x6048CAA95BCD401D', 'Заявки на согласование');\nlearningManagementCommands.chooseApplication('WT_0x6048CCDB387D3E71', 'Навыки работы с заемщиками');\nmainCommands.findHeader('Навыки работы с заемщиками', 'WT_0x637CAC0B4E161AD0');",
+          "err": {},
+          "uuid": "e6ef2d52-b86e-4a09-bab7-962b3949d84f",
+          "parentUUID": "493772d4-28a9-462e-ab94-0357bdb09d4d",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "c6561a45-8a75-4195-b734-6277414a6028",
+        "e6ef2d52-b86e-4a09-bab7-962b3949d84f"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 36820,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
