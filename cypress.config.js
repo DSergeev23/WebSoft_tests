@@ -17,18 +17,18 @@ module.exports = defineConfig({
       on('task', {downloadFile})
     },
 
-  // "reporter": "mochawesome",
-  // "reporterOptions": {
-  //   "charts": true,
-  //   "overwrite": false,
-  //   "html": false,
-  //   "json": true,
-  //   "reportDir": "cypress/reports"
-  //  }
-  //}
-    "reporter": 'cypress-junit-reporter',
-    "reporterOptions": {
-        "mochaFile": "./results-[hash].xml"
-    },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "charts": true,
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "reportDir": "cypress/reports"
+   }
   }
+  //   "reporter": 'cypress-junit-reporter',
+  //   "reporterOptions": {
+  //       "mochaFile": "./results-[hash].xml"
+  //   },
+  // }
 })
