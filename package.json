@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress": "cypress open",
     "posttest": "ready",
-    "cypress:runDefault": "cypress run --spec cypress/e2e/WebSoft/Learning_testing_management/Learning_management/Admin_Create_Assing_e-course.check.cy.js",
-    "chrome-test": "cypress run --spec cypress/e2e/WebSoft/Learning_testing_management --browser chrome --headless",
+    
+    "chrome-test": " cypress run --spec cypress/e2e/WebSoft/Learning_testing_management/Learning_management/Portal_course_page.cy.js --browser chrome --headless",
     "postchrome-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
     "script-chrome": "npm run chrome-test || npm run postchrome-test"
+    
   },
   "keywords": [
     "cypress",

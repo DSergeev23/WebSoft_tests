@@ -25,10 +25,12 @@ module.exports = defineConfig({
   //   "json": true,
   //   "reportDir": "cypress/reports"
   //  }
-  //}
-    "reporter": 'cypress-junit-reporter',
-    "reporterOptions": {
-        "mochaFile": "./results-[hash].xml"
+  // }
+  "reporter": "junit",
+  "reporterOptions": {
+      "mochaFile": "results/results-[hash].xml"
+  
     },
   }
 })
+

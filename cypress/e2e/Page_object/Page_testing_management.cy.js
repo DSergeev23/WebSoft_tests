@@ -32,7 +32,7 @@ export class TestingManagementCommands {
         })
         cy
         .url()
-        .should('include','/qtiplayer3/')
+        .should('include','/tests/')
 
         return this;
     }
